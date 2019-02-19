@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="">
+    <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="Dimension(): made simple calculator and add 2 Maps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" afterDir="false" />
@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+            <state relative-caret-position="45">
+              <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,11 +34,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="672">
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,14 +65,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/JavaClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/Number.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="-16" />
+    <option name="x" value="145" />
+    <option name="y" value="-14" />
     <option name="width" value="1453" />
     <option name="height" value="991" />
   </component>
@@ -82,10 +85,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550518539484" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550602889466" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaLearning" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -167,7 +171,9 @@
       <workItem from="1550399133875" duration="4767000" />
       <workItem from="1550420326005" duration="109000" />
       <workItem from="1550461773753" duration="150000" />
-      <workItem from="1550498546368" duration="10672000" />
+      <workItem from="1550498546368" duration="10730000" />
+      <workItem from="1550554544711" duration="9544000" />
+      <workItem from="1550583624580" duration="13720000" />
     </task>
     <task id="LOCAL-00001" summary="test commit from IntelliJ Idea">
       <created>1550085851232</created>
@@ -190,11 +196,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550461880210</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed foolCheck()&#10;Add calculator()">
+      <created>1550518964745</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550518964745</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35584000" />
+    <option name="totallyTimeSpent" value="58906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -240,24 +253,28 @@
     <MESSAGE value="test commit from IntelliJ Idea" />
     <MESSAGE value="Deleted JacaClass and created Main" />
     <MESSAGE value="Rebuilt project and started doing...&#10;Made foolCheck()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rebuilt project and started doing...&#10;Made foolCheck()" />
+    <MESSAGE value="Fixed foolCheck()&#10;Add calculator()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed foolCheck()&#10;Add calculator()" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/JavaClass.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/JavaClass.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Number.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="45">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state relative-caret-position="672">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
