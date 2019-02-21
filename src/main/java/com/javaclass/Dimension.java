@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class Dimension {
 
-    public double SI (String dimension, double number) {
+    private double SI (String dimension, double number) {
         switch (dimension) {
             case "km": case "км":
                 number *= 1000.0;
@@ -32,9 +32,17 @@ public class Dimension {
         }
         return number;
     }
-    public double operation(double number1, String dimension1, String sign, double number2, String dimension2) {
+    private  String dimensionSI (String dimension) {
+        if (dimension.matches("km|m|dm|cm|mm|mkm|nm")) dimension = "m";
+        else if (dimension.matches("км|м|дм|см|мм|мкм|нм")) dimension = "м";
+        else if (dimension.matches("s|mc|mks|ns")) dimension = "s";
+        else if (dimension.matches("c|мс|мкс|нс")) dimension = "с";
+        return dimension;
+    }
+    public String operation(double number1, String dimension1, String sign, double number2, String dimension2) {
         number1 = SI(dimension1, number1);
         number2 = SI(dimension2, number2);
+        String answerDimension = "";
         double result = 0;
             switch (sign) {
                 case "+":
@@ -52,6 +60,9 @@ public class Dimension {
                 default:
                     System.out.println("Invalid operation.");
         }
-        return result;
+        dimension1 = dimensionSI(dimension1);
+        dimension2 = dimensionSI(dimension2);
+        if (dimension1.equals(dimension2)) answerDimension = dimension1;
+        return result + " " + answerDimension;
     }
 }
