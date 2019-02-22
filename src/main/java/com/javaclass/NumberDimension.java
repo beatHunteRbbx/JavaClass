@@ -4,26 +4,29 @@ package com.javaclass;
 
 public class NumberDimension {
 
-    public static String foolCheck( String str) {
-        if (str.matches("\\s*\\d+\\s*\\w{1,3}\\s*(\\+|\\-|\\*|/){1}\\s*\\d+\\s*\\w{1,3}\\s*")) {
+    private static String foolCheck(String str) {
+        if (str.matches("\\s*\\d+\\s+(\\w|[а-яA-Я]){1,3}\\s+(\\+|\\-|\\*|/|=)?\\s+\\d+\\s+(\\w|[а-яА-Я]){1,3}\\s*")) {
             String userString = str.replaceAll("\\s+", " ").trim();
             return userString;
         }
-        else return "Invalid input! Try again. Example: 1 km + 1 cm";
+        else return "invalid";
     }
     public static String calculator(String str) {
         String[] userString = foolCheck(str).replaceAll("\\s+", " ").trim().split(" ");
-        int userNumber1 = Integer.parseInt(userString[0]);
-        String userDimension1 = userString[1];
-        String sign = userString[2];
-        int userNumber2 = Integer.parseInt(userString[3]);
-        String userDimension2 = userString[4];
-        Dimension dimension = new Dimension();
-        String summa = dimension.operation(userNumber1, userDimension1, sign, userNumber2, userDimension2);
-        return summa;
+        if (userString.length == 1) return "Invalid input! Try again. Example (only with spaces!): 1 km + 1 cm";
+        else {
+            int userNumber1 = Integer.parseInt(userString[0]);
+            String userDimension1 = userString[1];
+            String sign = userString[2];
+            int userNumber2 = Integer.parseInt(userString[3]);
+            String userDimension2 = userString[4];
+            Dimension dimension = new Dimension();
+            String summa = dimension.operation(userNumber1, userDimension1, sign, userNumber2, userDimension2);
+            return summa;
+        }
     }
     public static void main(String[] args) {
-        System.out.println(calculator("1   mks    + 1                   s         "));
+        System.out.println(calculator("1   КГ    + 2      КГ    "));
         /*System.out.println("Example: 1 cm + 2 km");
         System.out.print("Input an expression as in the example: ");
         String inputData1 = foolCheck();
