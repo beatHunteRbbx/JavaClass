@@ -26,7 +26,7 @@ public class NumberDimension {
         }
     }
     public static void main(String[] args) {
-        System.out.println(calculator("1   КГ    + 2      КГ    "));
+        System.out.println(calculator("1   d    + 1      s    "));
         /*System.out.println("Example: 1 cm + 2 km");
         System.out.print("Input an expression as in the example: ");
         String inputData1 = foolCheck();

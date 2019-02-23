@@ -28,14 +28,23 @@ public class Dimension {
                 break;
             case "ns": case "нс": case "nm": case "нм":
                 number *= 0.000000001;
+            case "h": case "ч":
+                number *= 3600.0;
+                break;
+            case "min": case "мин":
+                number *= 60.0;
+                break;
+            case "d": case "д":
+                number *= 86400.0;
+                break;
         }
         return number;
     }
     private  String dimensionSI (String dimension) {
         if (dimension.toLowerCase().matches("km|m|dm|cm|mm|mkm|nm")) dimension = "m";
         else if (dimension.toLowerCase().matches("км|м|дм|см|мм|мкм|нм")) dimension = "м";
-        else if (dimension.toLowerCase().matches("s|mc|mks|ns")) dimension = "s";
-        else if (dimension.toLowerCase().matches("c|мс|мкс|нс")) dimension = "с";
+        else if (dimension.toLowerCase().matches("d|h|min|s|mc|mks|ns")) dimension = "s";
+        else if (dimension.toLowerCase().matches("д|ч|мин|c|мс|мкс|нс")) dimension = "с";
         else if (dimension.toLowerCase().matches("кг|г|мг")) dimension = "кг";
         else if (dimension.toLowerCase().matches("kg|g|mg")) dimension = "kg";
         return dimension;
@@ -73,5 +82,16 @@ public class Dimension {
             else return "Numbers are not equals.";
         }
         else return result + " " + answerDimension;
+    }
+
+    public String plus (double number1, String dimension1, String sign, double number2, String dimension2) {
+        number1 = SI(dimension1, number1);
+        number2 = SI(dimension2, number2);
+        String answerDimension = "";
+        double result = number1 - number2;
+        dimension1 = dimensionSI(dimension1);
+        dimension2 = dimensionSI(dimension2);
+        if (dimension1.equals(dimension2)) answerDimension = dimension1;
+        return result + " " + answerDimension;
     }
 }
