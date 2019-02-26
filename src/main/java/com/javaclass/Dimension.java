@@ -6,7 +6,8 @@ import java.util.HashMap;
 
 public class Dimension {
 
-    private double SI (String dimension, double number) {
+
+    /*private double SI (String dimension, double number) {
         switch (dimension.toLowerCase()) {
             case "km": case "км":
                 number *= 1000.0;
@@ -82,16 +83,6 @@ public class Dimension {
             else return "Numbers are not equals.";
         }
         else return result + " " + answerDimension;
-    }
+    }*/
 
-    public String plus (double number1, String dimension1, String sign, double number2, String dimension2) {
-        number1 = SI(dimension1, number1);
-        number2 = SI(dimension2, number2);
-        String answerDimension = "";
-        double result = number1 - number2;
-        dimension1 = dimensionSI(dimension1);
-        dimension2 = dimensionSI(dimension2);
-        if (dimension1.equals(dimension2)) answerDimension = dimension1;
-        return result + " " + answerDimension;
-    }
 }

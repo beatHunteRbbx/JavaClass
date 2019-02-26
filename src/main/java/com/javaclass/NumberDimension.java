@@ -4,7 +4,41 @@ package com.javaclass;
 
 public class NumberDimension {
 
-    private static String foolCheck(String str) {
+    private static int classNumber = 0;
+    private static StringBuilder classDimension = new StringBuilder();
+
+
+    public NumberDimension(int number, String dimension) {      //constructor
+        classNumber = number;
+        classDimension.append(dimension);
+    }
+
+    public static String println() {              //test method
+        return classNumber + " " + classDimension;
+    }
+
+    public int plus(NumberDimension other) {
+        return this.classNumber + other.classNumber;
+    }
+
+    /* Класс будет использоваться примерно так:
+    NumberDimension a = new NumberDimension(10, "кг");
+    NumberDimension b = new NumberDimension(20, "кг");
+    NumberDimension c = a.plus(b);
+
+    На выходе должно получиться: c = new NumberDimension(30, "кг");
+
+    Каждую операцию сделать как отдельный метод.
+
+    пример метода:
+    public static Number plus (Number other) {
+
+    }
+
+    перевод в систему си убрать. учитывание языка и регистра убрать. при неправильном вводе кидать эксепшн.
+     */
+
+    /*private static String foolCheck(String str) {
         if (str.matches("\\s*\\d+\\s+(\\w|[а-яA-Я]){1,3}\\s+(\\+|\\-|\\*|/|=)?\\s+\\d+\\s+(\\w|[а-яА-Я]){1,3}\\s*")) {
             String userString = str.replaceAll("\\s+", " ").trim();
             return userString;
@@ -27,7 +61,7 @@ public class NumberDimension {
     }
     public static void main(String[] args) {
         System.out.println(calculator("1   d    + 1      s    "));
-        /*System.out.println("Example: 1 cm + 2 km");
+        System.out.println("Example: 1 cm + 2 km");
         System.out.print("Input an expression as in the example: ");
         String inputData1 = foolCheck();
         String userNumber1 = inputData1.split(" ")[0].replace(" ","");
@@ -39,6 +73,7 @@ public class NumberDimension {
         Scanner input = new Scanner(System.in);
         String userInput = input.nextLine();
         Dimension dimension = new Dimension();
-        dimension.operation("");*/
+        dimension.operation("");
     }
+    */
 }
