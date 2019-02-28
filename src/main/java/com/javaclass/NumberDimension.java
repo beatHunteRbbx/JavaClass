@@ -4,22 +4,26 @@ package com.javaclass;
 
 public class NumberDimension {
 
-    private static int classNumber = 0;
-    private static StringBuilder classDimension = new StringBuilder();
+    private static int number;
+    private static StringBuilder dimension = new StringBuilder();
 
 
-    public NumberDimension(int number, String dimension) {      //constructor
-        classNumber = number;
-        classDimension.append(dimension);
+    public NumberDimension(int userNumber, String userDimension) {      //constructor
+        number = userNumber;
+        dimension.append(userDimension);
     }
 
     public static String println() {              //test method
-        return classNumber + " " + classDimension;
+        return number + " " + dimension;
     }
 
     public int plus(NumberDimension other) {
-        return this.classNumber + other.classNumber;
+        int number1 = getClassNumber();
+        int number2 = other.getClassNumber();
+        return number1 + number2;
     }
+
+    public int getClassNumber() { return number; }
 
     /* Класс будет использоваться примерно так:
     NumberDimension a = new NumberDimension(10, "кг");

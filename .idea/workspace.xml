@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="Add time dimension">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/NumberDimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NumberDimension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/NumberDimension.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -24,11 +24,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="300">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding>
+                <element signature="e#363#364#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,24 +62,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="200">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -82,10 +92,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/JavaClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/Number.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/Main.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/NumberDimension.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/NumberDimension.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" />
       </list>
     </option>
   </component>
@@ -131,9 +143,22 @@
               <item name="beatHunteR" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaClass" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="beatHunteR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaClass" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="javaclass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beatHunteR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaClass" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -148,14 +173,14 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551217142283" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551330216127" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaLearning" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -169,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="JUnit.NumberDimensionTest.plusTest">
     <configuration name="JavaClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javaclass.JavaClass" />
       <module name="com.JavaClass.beatHunteR.main" />
@@ -216,8 +241,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NumberDimensionTest.plusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.JavaClass.beatHunteR.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.NumberDimensionTest" />
+      <option name="METHOD_NAME" value="plusTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NumberDimensionTest.plusTest" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.NumberDimension" />
         <item itemvalue="Application.Main" />
@@ -251,7 +293,8 @@
       <workItem from="1550853526582" duration="12297000" />
       <workItem from="1550904377648" duration="4599000" />
       <workItem from="1551134228063" duration="89000" />
-      <workItem from="1551194426208" duration="11043000" />
+      <workItem from="1551194426208" duration="11238000" />
+      <workItem from="1551290622985" duration="9263000" />
     </task>
     <task id="LOCAL-00001" summary="test commit from IntelliJ Idea">
       <created>1550085851232</created>
@@ -344,17 +387,56 @@
       <option name="project" value="LOCAL" />
       <updated>1550909679526</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Rewriting all code&#10;Commented all previous code.">
+      <created>1551217331861</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1551217331861</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.27 at 23h 22m 28s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.27 at 23h 22m 44s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.27 at 23h 29m 35s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.27 at 23h 29m 39s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 06h 30m 29s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 06h 30m 37s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 06h 44m 35s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 06h 48m 10s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 07h 10m 45s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 07h 35m 48s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99058000" />
+    <option name="totallyTimeSpent" value="108516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -363,7 +445,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.3181818" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4968017" visible="true" weight="0.3181818" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -371,8 +453,8 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.32900432" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" visible="true" weight="0.3181818" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50319827" side_tool="true" visible="true" weight="0.3181818" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.32900432" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -404,7 +486,8 @@
     <MESSAGE value="comment test" />
     <MESSAGE value="Done different cases input and add kilograms as valid dimension." />
     <MESSAGE value="Add time dimension" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add time dimension" />
+    <MESSAGE value="Rewriting all code&#10;Commented all previous code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rewriting all code&#10;Commented all previous code." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -429,8 +512,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="399">
+          <caret line="19" column="1" lean-forward="true" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -439,8 +532,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="200">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -449,23 +562,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="175">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
             <element signature="e#363#364#0" expanded="true" />
             <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -527,7 +628,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
