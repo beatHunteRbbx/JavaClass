@@ -8,6 +8,7 @@ public class NumberDimension {
     private final int number;
     private final String dimension;
 
+    public int getNumber() { return number; }
 
     public NumberDimension(int userNumber, String userDimension) {      //constructor
         number = userNumber;
@@ -27,7 +28,7 @@ public class NumberDimension {
         int numberResult = number1 - number2;
         return new NumberDimension(numberResult, dimension);
     }
-    public int getNumber() { return number; }
+
 
     /* Класс будет использоваться примерно так:
     NumberDimension a = new NumberDimension(10, "кг");
