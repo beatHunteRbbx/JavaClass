@@ -1,29 +1,33 @@
 package com.javaclass;
 
 
+import java.util.Objects;
 
 public class NumberDimension {
 
-    private static int number;
-    private static StringBuilder dimension = new StringBuilder();
+    private final int number;
+    private final String dimension;
 
 
     public NumberDimension(int userNumber, String userDimension) {      //constructor
         number = userNumber;
-        dimension.append(userDimension);
+        dimension = userDimension;
     }
 
-    public static String println() {              //test method
-        return number + " " + dimension;
+    public NumberDimension plus(NumberDimension other) {
+        int number1 = getNumber();
+        int number2 = other.getNumber();
+        int numberResult = number1 + number2;
+        return new NumberDimension(numberResult, dimension);
     }
 
-    public int plus(NumberDimension other) {
-        int number1 = getClassNumber();
-        int number2 = other.getClassNumber();
-        return number1 + number2;
+    public NumberDimension minus(NumberDimension other) {
+        int number1 = getNumber();
+        int number2 = other.getNumber();
+        int numberResult = number1 - number2;
+        return new NumberDimension(numberResult, dimension);
     }
-
-    public int getClassNumber() { return number; }
+    public int getNumber() { return number; }
 
     /* Класс будет использоваться примерно так:
     NumberDimension a = new NumberDimension(10, "кг");
@@ -80,4 +84,18 @@ public class NumberDimension {
         dimension.operation("");
     }
     */
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        NumberDimension that = (NumberDimension) o;
+        return number == that.number &&
+                Objects.equals(dimension, that.dimension);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(number, dimension);
+    }
 }
