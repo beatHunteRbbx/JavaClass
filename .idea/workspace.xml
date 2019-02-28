@@ -172,7 +172,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551380006502" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551380135298" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaLearning" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -193,7 +193,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NumberDimensionTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="com.JavaClass.beatHunteR.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NumberDimensionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.JavaClass.beatHunteR.test" />
       <extension name="coverage">
@@ -241,22 +248,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberDimensionTest.minusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.JavaClass.beatHunteR.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.NumberDimensionTest" />
-      <option name="METHOD_NAME" value="minusTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NumberDimensionTest.multiplyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.JavaClass.beatHunteR.test" />
       <extension name="coverage">
@@ -274,19 +265,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.NumberDimensionTest.minusTest" />
       <item itemvalue="JUnit.NumberDimensionTest.multiplyTest" />
       <item itemvalue="JUnit.NumberDimensionTest.divideTest" />
       <item itemvalue="JUnit.NumberDimensionTest.equalTest" />
       <item itemvalue="JUnit.NumberDimensionTest" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.NumberDimensionTest" />
         <item itemvalue="JUnit.NumberDimensionTest.equalTest" />
         <item itemvalue="JUnit.NumberDimensionTest.divideTest" />
         <item itemvalue="JUnit.NumberDimensionTest.multiplyTest" />
-        <item itemvalue="JUnit.NumberDimensionTest.minusTest" />
       </list>
     </recent_temporary>
   </component>

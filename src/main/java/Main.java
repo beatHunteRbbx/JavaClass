@@ -7,6 +7,6 @@ public class Main {
         NumberDimension a = new NumberDimension(10, "кг");
         NumberDimension b = new NumberDimension(20, "кг");
 
-        System.out.println(b.getNumber());
+        System.out.println(a.equal(b));
     }
 }
