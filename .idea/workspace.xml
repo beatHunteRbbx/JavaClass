@@ -4,7 +4,6 @@
     <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="test commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -37,11 +36,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+            <state relative-caret-position="968">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
-                <element signature="e#3575#3576#0" expanded="true" />
-                <element signature="e#3629#3630#0" expanded="true" />
+                <element signature="e#1874#1875#0" expanded="true" />
+                <element signature="e#1928#1929#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+            <state relative-caret-position="1078">
+              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,7 +171,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551375350285" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551375398411" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaLearning" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -429,22 +428,17 @@
       <option name="project" value="LOCAL" />
       <updated>1551372404104</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added tests for operations">
+      <created>1551375428251</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1551375428251</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 14h 10m 05s.xml">
-      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 14h 22m 39s.xml">
-      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 14h 23m 58s.xml">
-      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_minusTest - 2019.02.28 at 14h 30m 57s.xml">
-      <configuration name="NumberDimensionTest.minusTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NumberDimensionTest - 2019.02.28 at 14h 31m 03s.xml">
       <configuration name="NumberDimensionTest" configurationId="JUnit" />
     </history-entry>
@@ -463,9 +457,21 @@
     <history-entry file="NumberDimensionTest - 2019.02.28 at 20h 32m 42s.xml">
       <configuration name="NumberDimensionTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 20h 34m 56s.xml">
+      <configuration name="NumberDimensionTest.equalTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 20h 35m 24s.xml">
+      <configuration name="NumberDimensionTest.equalTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 20h 35m 36s.xml">
+      <configuration name="NumberDimensionTest.equalTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest - 2019.02.28 at 20h 35m 40s.xml">
+      <configuration name="NumberDimensionTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113293000" />
+    <option name="totallyTimeSpent" value="113539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -527,7 +533,8 @@
     <MESSAGE value="added gitignore" />
     <MESSAGE value="test commit" />
     <MESSAGE value="edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit" />
+    <MESSAGE value="added tests for operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests for operations" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -563,16 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -583,13 +580,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        <state relative-caret-position="968">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
-            <element signature="e#3575#3576#0" expanded="true" />
-            <element signature="e#3629#3630#0" expanded="true" />
+            <element signature="e#1874#1875#0" expanded="true" />
+            <element signature="e#1928#1929#0" expanded="true" />
           </folding>
         </state>
       </provider>

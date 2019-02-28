@@ -8,12 +8,15 @@ public class NumberDimension {
     private final int number;
     private final String dimension;
 
+
     public int getNumber() { return number; }
 
     public NumberDimension(int userNumber, String userDimension) {      //constructor
         number = userNumber;
         dimension = userDimension;
     }
+
+
 
     public NumberDimension plus(NumberDimension other) {
         int number1 = getNumber();
@@ -29,7 +32,39 @@ public class NumberDimension {
         return new NumberDimension(numberResult, dimension);
     }
 
+    public NumberDimension multiply(NumberDimension other) {
+        int number1 = getNumber();
+        int number2 = other.getNumber();
+        int numberResult = number1 * number2;
+        return new NumberDimension(numberResult, dimension);
+    }
 
+    public NumberDimension divide(NumberDimension other) {
+        int number1 = getNumber();
+        int number2 = other.getNumber();
+        int numberResult = number1 / number2;
+        return new NumberDimension(numberResult, dimension);
+    }
+
+    public boolean equal(NumberDimension other) {
+        int number1 = getNumber();
+        int number2 = other.getNumber();
+        return number1 == number2;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        NumberDimension that = (NumberDimension) o;
+        return number == that.number &&
+                Objects.equals(dimension, that.dimension);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(number, dimension);
+    }
     /* Класс будет использоваться примерно так:
     NumberDimension a = new NumberDimension(10, "кг");
     NumberDimension b = new NumberDimension(20, "кг");
@@ -86,17 +121,5 @@ public class NumberDimension {
     }
     */
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        NumberDimension that = (NumberDimension) o;
-        return number == that.number &&
-                Objects.equals(dimension, that.dimension);
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(number, dimension);
-    }
 }
