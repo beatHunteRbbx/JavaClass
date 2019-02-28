@@ -9,15 +9,17 @@ public class NumberDimension {
     private final String dimension;
 
 
-    public int getNumber() { return number; }
+    private int getNumber() { return number; }
 
     public NumberDimension(int userNumber, String userDimension) {      //constructor
         number = userNumber;
         dimension = userDimension;
     }
 
-
-
+    public NumberDimension(String userStr) {
+        number = Integer.parseInt(userStr.split(" ")[0]);
+        dimension = userStr.split(" ")[1];
+    }
     public NumberDimension plus(NumberDimension other) {
         int number1 = getNumber();
         int number2 = other.getNumber();

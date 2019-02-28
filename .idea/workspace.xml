@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="test commit">
+    <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -24,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="135">
+              <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="-462">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#1874#1875#0" expanded="true" />
                 <element signature="e#1928#1929#0" expanded="true" />
@@ -46,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            <state relative-caret-position="462">
+              <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,10 +93,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/NumberDimension.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" />
       </list>
     </option>
   </component>
@@ -171,7 +172,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551375398411" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551380006502" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaLearning" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -193,13 +194,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.NumberDimensionTest">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="com.JavaClass.beatHunteR.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NumberDimensionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.JavaClass.beatHunteR.test" />
       <extension name="coverage">
@@ -211,6 +205,22 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.NumberDimensionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberDimensionTest.divideTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.JavaClass.beatHunteR.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.NumberDimensionTest" />
+      <option name="METHOD_NAME" value="divideTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,7 +257,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberDimensionTest.plusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NumberDimensionTest.multiplyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.JavaClass.beatHunteR.test" />
       <extension name="coverage">
         <pattern>
@@ -257,26 +267,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.NumberDimensionTest" />
-      <option name="METHOD_NAME" value="plusTest" />
+      <option name="METHOD_NAME" value="multiplyTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main (1)" />
-      <item itemvalue="JUnit.NumberDimensionTest.plusTest" />
       <item itemvalue="JUnit.NumberDimensionTest.minusTest" />
-      <item itemvalue="JUnit.NumberDimensionTest" />
+      <item itemvalue="JUnit.NumberDimensionTest.multiplyTest" />
+      <item itemvalue="JUnit.NumberDimensionTest.divideTest" />
       <item itemvalue="JUnit.NumberDimensionTest.equalTest" />
+      <item itemvalue="JUnit.NumberDimensionTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.NumberDimensionTest" />
         <item itemvalue="JUnit.NumberDimensionTest.equalTest" />
-        <item itemvalue="JUnit.NumberDimensionTest.plusTest" />
+        <item itemvalue="JUnit.NumberDimensionTest.divideTest" />
+        <item itemvalue="JUnit.NumberDimensionTest.multiplyTest" />
         <item itemvalue="JUnit.NumberDimensionTest.minusTest" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -435,43 +445,57 @@
       <option name="project" value="LOCAL" />
       <updated>1551375428251</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added multiply, divide, equal">
+      <created>1551375481221</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1551375481221</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added test for string input for all operations">
+      <created>1551380004221</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1551380004221</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NumberDimensionTest - 2019.02.28 at 14h 31m 03s.xml">
-      <configuration name="NumberDimensionTest" configurationId="JUnit" />
+    <history-entry file="NumberDimensionTest_multiplyTest - 2019.02.28 at 21h 48m 58s.xml">
+      <configuration name="NumberDimensionTest.multiplyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 18h 55m 40s.xml">
-      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    <history-entry file="NumberDimensionTest_divideTest - 2019.02.28 at 21h 50m 06s.xml">
+      <configuration name="NumberDimensionTest.divideTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumberDimensionTest_plusTest - 2019.02.28 at 18h 55m 59s.xml">
-      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    <history-entry file="NumberDimensionTest_divideTest - 2019.02.28 at 21h 50m 13s.xml">
+      <configuration name="NumberDimensionTest.divideTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumberDimensionTest - 2019.02.28 at 20h 10m 07s.xml">
-      <configuration name="NumberDimensionTest" configurationId="JUnit" />
+    <history-entry file="NumberDimensionTest_divideTest - 2019.02.28 at 21h 50m 21s.xml">
+      <configuration name="NumberDimensionTest.divideTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumberDimensionTest - 2019.02.28 at 20h 29m 00s.xml">
-      <configuration name="NumberDimensionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest - 2019.02.28 at 20h 32m 42s.xml">
-      <configuration name="NumberDimensionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 20h 34m 56s.xml">
+    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 21h 51m 06s.xml">
       <configuration name="NumberDimensionTest.equalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 20h 35m 24s.xml">
+    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 21h 51m 16s.xml">
       <configuration name="NumberDimensionTest.equalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 20h 35m 36s.xml">
+    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 21h 51m 30s.xml">
       <configuration name="NumberDimensionTest.equalTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumberDimensionTest - 2019.02.28 at 20h 35m 40s.xml">
+    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 21h 51m 36s.xml">
+      <configuration name="NumberDimensionTest.equalTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_equalTest - 2019.02.28 at 21h 52m 40s.xml">
+      <configuration name="NumberDimensionTest.equalTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest - 2019.02.28 at 21h 52m 43s.xml">
       <configuration name="NumberDimensionTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113539000" />
+    <option name="totallyTimeSpent" value="116546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -534,9 +558,21 @@
     <MESSAGE value="test commit" />
     <MESSAGE value="edit" />
     <MESSAGE value="added tests for operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests for operations" />
+    <MESSAGE value="added multiply, divide, equal" />
+    <MESSAGE value="added test for string input for all operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test for string input for all operations" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="dimension.matches(&quot;m&quot;)" />
@@ -560,6 +596,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -570,33 +616,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="-462">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1874#1875#0" expanded="true" />
+            <element signature="e#1928#1929#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="462">
+          <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#1874#1875#0" expanded="true" />
-            <element signature="e#1928#1929#0" expanded="true" />
           </folding>
         </state>
       </provider>
