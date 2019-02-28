@@ -8,17 +8,27 @@ public class NumberDimension {
     private final int number;
     private final String dimension;
 
+    private static String foolCheck(String str) {
+        if (str.matches("\\s*\\d+\\s+(\\w|[а-яA-Я]){1,3}\\s*")) {
+            String userString = str.replaceAll("\\s+", " ").trim();
+            return userString;
+        }
+        else return "invalid";
+    }
 
     private int getNumber() { return number; }
 
-    public NumberDimension(int userNumber, String userDimension) {      //constructor
+    public NumberDimension(int userNumber, String userDimension) {
         number = userNumber;
         dimension = userDimension;
     }
 
     public NumberDimension(String userStr) {
-        number = Integer.parseInt(userStr.split(" ")[0]);
-        dimension = userStr.split(" ")[1];
+        if (!foolCheck(userStr).equals("invalid")) {
+            number = Integer.parseInt(userStr.split(" ")[0]);
+            dimension = userStr.split(" ")[1];
+        }
+        else throw new NumberFormatException("Invalid output!");
     }
     public NumberDimension plus(NumberDimension other) {
         int number1 = getNumber();
