@@ -5,16 +5,31 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 
+
 public class Dimension {
 
     private final int number;
     private final String dimension;
 
+    private static String foolCheck(String str) {
+        if (str.matches("\\s*\\d+\\s+(\\w|[а-яA-Я]){1,3}\\s*")) {
+            String userString = str.replaceAll("\\s+", " ").trim();
+            return userString;
+        }
+        else return "invalid";
+    }
+
     public Dimension(int userNumber, String userDimension) {
         number = userNumber;
         dimension = userDimension;
     }
-
+    public Dimension(String userStr) {
+        if (!foolCheck(userStr).equals("invalid")) {
+            number = Integer.parseInt(userStr.split(" ")[0]);
+            dimension = userStr.split(" ")[1];
+        }
+        else throw new NumberFormatException("Invalid output!");
+    }
     private String getDimension() { return dimension; }
     private int getNumber() { return number; }
 
