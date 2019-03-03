@@ -1,5 +1,6 @@
 package tests;
 
+import com.javaclass.Dimension;
 import com.javaclass.NumberDimension;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -79,5 +80,17 @@ public class NumberDimensionTest {
         assertTrue(resultStr);
     }
 
+    @Test
+    public void toSITest() {
+        Dimension a = new Dimension(1000, "г");
+        Dimension b = new Dimension(1, "h");
+        Dimension resultA = a.toSI();
+        Dimension resultB = b.toSI();
+        Dimension expectedA = new Dimension(1, "кг");
+        Dimension expectedB = new Dimension(3600,"s");
+
+        assertEquals(expectedA, resultA);
+        assertEquals(expectedB, resultB);
+    }
 
 }
