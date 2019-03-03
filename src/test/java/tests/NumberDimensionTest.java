@@ -84,13 +84,21 @@ public class NumberDimensionTest {
     public void toSITest() {
         Dimension a = new Dimension(1000, "г");
         Dimension b = new Dimension(1, "h");
+        Dimension aStr = new Dimension("1000 г");
+        Dimension bStr = new Dimension("1 h");
         Dimension resultA = a.toSI();
         Dimension resultB = b.toSI();
+        Dimension resultAStr = aStr.toSI();
+        Dimension resultBStr = bStr.toSI();
         Dimension expectedA = new Dimension(1, "кг");
         Dimension expectedB = new Dimension(3600,"s");
+        Dimension expectedAStr = new Dimension("1 кг");
+        Dimension expectedBStr = new Dimension("3600 s");
 
         assertEquals(expectedA, resultA);
         assertEquals(expectedB, resultB);
+        assertEquals(expectedAStr, resultAStr);
+        assertEquals(expectedBStr, resultBStr);
     }
 
 }

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="92" column="39" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
+            <state relative-caret-position="402">
+              <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
-              <caret line="84" column="23" lean-forward="true" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,7 +122,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551598470112" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551599599412" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaLearning" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -262,7 +260,7 @@
       <workItem from="1551194426208" duration="11238000" />
       <workItem from="1551290622985" duration="9263000" />
       <workItem from="1551526393753" duration="6621000" />
-      <workItem from="1551591750434" duration="5322000" />
+      <workItem from="1551591750434" duration="6302000" />
     </task>
     <task id="LOCAL-00001" summary="test commit from IntelliJ Idea">
       <created>1550085851232</created>
@@ -432,16 +430,24 @@
       <option name="project" value="LOCAL" />
       <updated>1551596445965</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="made toSI() tests">
+      <created>1551598529122</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1551598529122</updated>
+    </task>
+    <task id="LOCAL-00026" summary="made foolCheck() and added constructor for string input">
+      <created>1551598572704</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1551598572704</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 18m 51s.xml">
-      <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 22m 12s.xml">
-      <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 22m 18s.xml">
       <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
     </history-entry>
@@ -466,9 +472,15 @@
     <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 28m 40s.xml">
       <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 32m 15s.xml">
+      <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 32m 27s.xml">
+      <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130515000" />
+    <option name="totallyTimeSpent" value="131495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -484,8 +496,8 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.66897655" visible="true" weight="0.31709957" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.39935064" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.66897655" weight="0.31709957" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -513,8 +525,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test commit from IntelliJ Idea" />
-    <MESSAGE value="Deleted JacaClass and created Main" />
     <MESSAGE value="Rebuilt project and started doing...&#10;Made foolCheck()" />
     <MESSAGE value="Fixed foolCheck()&#10;Add calculator()" />
     <MESSAGE value="operation(): made simple calculator and add 2 Maps" />
@@ -538,7 +548,9 @@
     <MESSAGE value="changed output" />
     <MESSAGE value="added foolCheck() for string input" />
     <MESSAGE value="done conversion to SI system" />
-    <option name="LAST_COMMIT_MESSAGE" value="done conversion to SI system" />
+    <MESSAGE value="made toSI() tests" />
+    <MESSAGE value="made foolCheck() and added constructor for string input" />
+    <option name="LAST_COMMIT_MESSAGE" value="made foolCheck() and added constructor for string input" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -612,7 +624,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
-          <caret line="84" column="23" lean-forward="true" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -621,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="92" column="39" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
+        <state relative-caret-position="402">
+          <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
