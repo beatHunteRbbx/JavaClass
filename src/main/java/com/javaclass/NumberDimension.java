@@ -8,7 +8,7 @@ public class NumberDimension {
     private final int number;
     private final String dimension;
 
-    private static String foolCheck(String str) {
+    private String foolCheck(String str) {
         if (str.matches("\\s*\\d+\\s+(\\w|[а-яA-Я]){1,3}\\s*")) {
             String userString = str.replaceAll("\\s+", " ").trim();
             return userString;
