@@ -1,6 +1,8 @@
 package com.javaclass;
 
-
+//использовать Dimension, а не строку.
+//дать возможность пользователю хранить в конструкторе не строку а объект Dimension.
+//создать еще один конструктор в который будет поступать объект Dimension.
 import java.util.Objects;
 
 public class NumberDimension {
