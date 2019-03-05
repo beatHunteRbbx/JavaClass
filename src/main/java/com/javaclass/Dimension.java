@@ -3,6 +3,7 @@ package com.javaclass;
 import javafx.util.Pair;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 import java.util.regex.Matcher;
 
 
@@ -85,9 +86,21 @@ public class Dimension {
         return new Dimension(userNumber, userDimension);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Dimension dimension1 = (Dimension) o;
+        return number == dimension1.number &&
+                Objects.equals(dimension, dimension1.dimension);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(number, dimension);
+    }
 
-    /*private double SI (String dimension, double number) {
+/*private double SI (String dimension, double number) {
         switch (dimension.toLowerCase()) {
             case "km": case "км":
                 number *= 1000.0;
