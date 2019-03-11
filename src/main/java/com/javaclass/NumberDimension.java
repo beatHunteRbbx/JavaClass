@@ -4,10 +4,11 @@ package com.javaclass;
 //дать возможность пользователю хранить в конструкторе не строку а объект Dimension.
 //создать еще один конструктор в который будет поступать объект Dimension.
 import java.util.Objects;
+import com.javaclass.Dimension;
 
 public class NumberDimension {
 
-    private final int number;
+    private final double number;
     private final String dimension;
 
     private String foolCheck(String str) {
@@ -18,12 +19,14 @@ public class NumberDimension {
         else return "invalid";
     }
 
-    private int getNumber() { return number; }
+    private double getNumber() { return number; }
+    private String getDimension() { return dimension; }
 
-    public NumberDimension(int userNumber, String userDimension) {
+    public NumberDimension(double userNumber, String userDimension) {
         number = userNumber;
         dimension = userDimension;
     }
+
 
     public NumberDimension(String userStr) {
         if (!foolCheck(userStr).equals("invalid")) {
@@ -32,37 +35,89 @@ public class NumberDimension {
         }
         else throw new NumberFormatException("Invalid output!");
     }
+
+    public final NumberDimension toSI() {
+        double userNumber = getNumber();
+        String userDimension = getDimension();
+
+        switch (userDimension.toLowerCase()) {
+            case "km": case "км":
+                userNumber *= 1000.0;
+                break;
+            case "s": case "с": case "m": case "м": case "kg": case "кг":
+                userNumber *= 1.0;
+                break;
+            case "dm": case "дм":
+                userNumber *= 0.1;
+                break;
+            case "cm": case "см":
+                userNumber *= 0.01;
+                break;
+            case "ms": case "мс": case "mm": case "мм": case "g": case "г":
+                userNumber *= 0.001;
+                break;
+            case "mks": case "мкс": case "mkm": case "мкм": case "mg": case "мг":
+                userNumber *= 0.000001;
+                break;
+            case "ns": case "нс": case "nm": case "нм":
+                userNumber *= 0.000000001;
+            case "h": case "ч":
+                userNumber *= 3600.0;
+                break;
+            case "min": case "мин":
+                userNumber *= 60.0;
+                break;
+            case "d": case "д":
+                userNumber *= 86400.0;
+                break;
+        }
+
+        if (userDimension.toLowerCase().matches("km|m|dm|cm|mm|mkm|nm"))
+            userDimension = "m";
+        else if (userDimension.toLowerCase().matches("км|м|дм|см|мм|мкм|нм"))
+            userDimension = "м";
+        else if (userDimension.toLowerCase().matches("d|h|min|s|mc|mks|ns"))
+            userDimension = "s";
+        else if (userDimension.toLowerCase().matches("д|ч|мин|c|мс|мкс|нс"))
+            userDimension = "с";
+        else if (userDimension.toLowerCase().matches("кг|г|мг"))
+            userDimension = "кг";
+        else if (userDimension.toLowerCase().matches("kg|g|mg"))
+            userDimension = "kg";
+
+        return new NumberDimension(userNumber, userDimension);
+    }
     public NumberDimension plus(NumberDimension other) {
-        int number1 = getNumber();
-        int number2 = other.getNumber();
-        int numberResult = number1 + number2;
+        double number1 = getNumber();
+        double number2 = other.getNumber();
+        double numberResult = number1 + number2;
         return new NumberDimension(numberResult, dimension);
     }
 
     public NumberDimension minus(NumberDimension other) {
-        int number1 = getNumber();
-        int number2 = other.getNumber();
-        int numberResult = number1 - number2;
+        double number1 = getNumber();
+        double number2 = other.getNumber();
+        double numberResult = number1 - number2;
         return new NumberDimension(numberResult, dimension);
     }
 
     public NumberDimension multiply(NumberDimension other) {
-        int number1 = getNumber();
-        int number2 = other.getNumber();
-        int numberResult = number1 * number2;
+        double number1 = getNumber();
+        double number2 = other.getNumber();
+        double numberResult = number1 * number2;
         return new NumberDimension(numberResult, dimension);
     }
 
     public NumberDimension divide(NumberDimension other) {
-        int number1 = getNumber();
-        int number2 = other.getNumber();
-        int numberResult = number1 / number2;
+        double number1 = getNumber();
+        double number2 = other.getNumber();
+        double numberResult = number1 / number2;
         return new NumberDimension(numberResult, dimension);
     }
 
     public boolean equal(NumberDimension other) {
-        int number1 = getNumber();
-        int number2 = other.getNumber();
+        double number1 = getNumber();
+        double number2 = other.getNumber();
         return number1 == number2;
     }
 
@@ -79,6 +134,8 @@ public class NumberDimension {
     public int hashCode() {
         return Objects.hash(number, dimension);
     }
+
+
     /* Класс будет использоваться примерно так:
     NumberDimension a = new NumberDimension(10, "кг");
     NumberDimension b = new NumberDimension(20, "кг");
