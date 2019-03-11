@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="added 2 override methods">
+    <list default="true" id="b46e3a7f-c069-4094-a145-90e9f8ea9073" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -19,39 +22,13 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-878041507">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="422" />
-          <entry key="txt" value="133" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="422" />
-          <entry key="PLAIN_TEXT" value="133" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="gitignore" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,30 +39,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="440">
+              <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
               <folding>
-                <element signature="e#2404#2405#0" expanded="true" />
-                <element signature="e#2458#2459#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -93,11 +51,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+            <state relative-caret-position="638">
+              <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="636">
+              <caret line="100" column="47" lean-forward="true" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
               <folding>
-                <element signature="e#3226#3227#0" expanded="true" />
-                <element signature="e#3280#3281#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,10 +91,10 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/NumberDimension.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/Test.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -142,21 +108,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="beatHunteR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaClassForPolytech" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -165,7 +117,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551806070414" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551985915422" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -173,125 +125,6 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/modules/com.JavaClass.beatHunteR.main.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/modules/com.JavaClass.beatHunteR.test.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/Main.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -305,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NumberDimensionTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="com.JavaClass.beatHunteR.main" />
@@ -385,10 +218,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.NumberDimensionTest.plusTest" />
         <item itemvalue="JUnit.NumberDimensionTest" />
         <item itemvalue="JUnit.NumberDimensionTest.toSITest" />
-        <item itemvalue="JUnit.NumberDimensionTest.plusTest" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.NumberDimensionTest.equalTest" />
       </list>
     </recent_temporary>
@@ -423,6 +256,11 @@
       <workItem from="1551290622985" duration="9263000" />
       <workItem from="1551526393753" duration="6621000" />
       <workItem from="1551591750434" duration="6302000" />
+      <workItem from="1551806032557" duration="7040000" />
+      <workItem from="1551887922451" duration="5214000" />
+      <workItem from="1551957805281" duration="1124000" />
+      <workItem from="1551984278881" duration="644000" />
+      <workItem from="1551985025812" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="test commit from IntelliJ Idea">
       <created>1550085851232</created>
@@ -627,31 +465,17 @@
       <option name="project" value="LOCAL" />
       <updated>1551780744828</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="restored all deleted files">
+      <created>1551806107052</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1551806107052</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 24m 36s.xml">
-      <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_plusTest - 2019.03.03 at 10h 26m 18s.xml">
-      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_plusTest - 2019.03.03 at 10h 28m 24s.xml">
-      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 28m 35s.xml">
-      <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 28m 40s.xml">
-      <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 32m 15s.xml">
-      <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberDimensionTest_toSITest - 2019.03.03 at 10h 32m 27s.xml">
-      <configuration name="NumberDimensionTest.toSITest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NumberDimensionTest - 2019.03.05 at 12h 17m 54s.xml">
       <configuration name="NumberDimensionTest" configurationId="JUnit" />
     </history-entry>
@@ -661,15 +485,35 @@
     <history-entry file="NumberDimensionTest - 2019.03.05 at 13h 07m 15s.xml">
       <configuration name="NumberDimensionTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="NumberDimensionTest - 2019.03.05 at 20h 14m 28s.xml">
+      <configuration name="NumberDimensionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.03.05 at 20h 23m 09s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.03.05 at 20h 23m 18s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.03.05 at 20h 23m 43s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.03.05 at 20h 24m 01s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.03.05 at 22h 33m 50s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumberDimensionTest_plusTest - 2019.03.05 at 22h 34m 13s.xml">
+      <configuration name="NumberDimensionTest.plusTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131495000" />
+    <option name="totallyTimeSpent" value="146418000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2761194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -679,8 +523,8 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.66717094" visible="true" weight="0.31587562" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49848714" weight="0.21767594" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.66717094" weight="0.31493506" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49848714" weight="0.14935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -708,7 +552,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed foolCheck() and calculator()" />
     <MESSAGE value="Deleted 2 HashMaps: length, time&#10;Change algorithm to switch idea. &#10;Created SI() method to converted dimensions to SI system." />
     <MESSAGE value="Add dimensionSI() to convert different dimensions to SI (meters/seconds)" />
     <MESSAGE value="fixed test in main class" />
@@ -733,7 +576,8 @@
     <MESSAGE value="changed static methods to final methods" />
     <MESSAGE value="added some comments" />
     <MESSAGE value="added 2 override methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 2 override methods" />
+    <MESSAGE value="restored all deleted files" />
+    <option name="LAST_COMMIT_MESSAGE" value="restored all deleted files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -743,6 +587,18 @@
           <line>97</line>
           <properties />
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -762,16 +618,6 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/NumberFormatException.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimension.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -786,38 +632,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
           <folding>
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3280#3281#0" expanded="true" />
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5784#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/NumberDimensionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="636">
+          <caret line="100" column="47" lean-forward="true" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/Dimension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javaclass/NumberDimension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="440">
+          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
           <folding>
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2458#2459#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
