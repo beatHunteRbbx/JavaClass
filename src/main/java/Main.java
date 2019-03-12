@@ -8,7 +8,7 @@ public class Main {
         Dimension d = new Dimension(10, "кг");
         NumberDimension a = new NumberDimension(1, "г");
         NumberDimension b = new NumberDimension(20, "кг");
-        NumberDimension res = a.toSI().plus(b.toSI());
+        NumberDimension res = a.plus(b);
         System.out.println(res);
     }
 }

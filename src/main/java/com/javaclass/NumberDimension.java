@@ -12,7 +12,7 @@ public class NumberDimension {
     private final String dimension;
 
     private String foolCheck(String str) {
-        if (str.matches("\\s*\\d+\\s+(\\w|[а-яA-Я]){1,3}\\s*")) {
+        if (str.matches("\\s*(\\d+|\\d+\\.?\\d+)\\s+(\\w|[а-яA-Я]){1,3}\\s*")) {
             String userString = str.replaceAll("\\s+", " ").trim();
             return userString;
         }
@@ -70,6 +70,7 @@ public class NumberDimension {
             case "d": case "д":
                 userNumber *= 86400.0;
                 break;
+             default: throw new NumberFormatException("Invalid dimension");
         }
 
         if (userDimension.toLowerCase().matches("km|m|dm|cm|mm|mkm|nm"))
@@ -88,6 +89,7 @@ public class NumberDimension {
         return new NumberDimension(userNumber, userDimension);
     }
     public NumberDimension plus(NumberDimension other) {
+        if (this.dimension != other.dimension) throw new NumberFormatException("Different dimensions");
         double number1 = getNumber();
         double number2 = other.getNumber();
         double numberResult = number1 + number2;
@@ -101,10 +103,9 @@ public class NumberDimension {
         return new NumberDimension(numberResult, dimension);
     }
 
-    public NumberDimension multiply(NumberDimension other) {
-        double number1 = getNumber();
-        double number2 = other.getNumber();
-        double numberResult = number1 * number2;
+    public NumberDimension multiply (double number) {
+        double userNumber = getNumber();
+        double numberResult = userNumber * number;
         return new NumberDimension(numberResult, dimension);
     }
 
@@ -113,12 +114,6 @@ public class NumberDimension {
         double number2 = other.getNumber();
         double numberResult = number1 / number2;
         return new NumberDimension(numberResult, dimension);
-    }
-
-    public boolean equal(NumberDimension other) {
-        double number1 = getNumber();
-        double number2 = other.getNumber();
-        return number1 == number2;
     }
 
     @Override

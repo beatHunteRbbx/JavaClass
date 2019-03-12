@@ -9,17 +9,23 @@ import static org.junit.Assert.*;
 public class NumberDimensionTest {
     @Test
     public void plusTest() {
-        NumberDimension expected = new NumberDimension(21, "кг");
-        NumberDimension a = new NumberDimension(1, "кг");
+        /*
+        подкорректировать регекс
+        если вместо размерности написан бред - кидать эксепшн
+        разные размерности - кидать эксепшн
+         */
+        NumberDimension a = new NumberDimension(1, "г");
         NumberDimension b = new NumberDimension(20, "кг");
-        NumberDimension str1 = new NumberDimension("10 кг");
+        NumberDimension str1 = new NumberDimension("1 г");
         NumberDimension str2 = new NumberDimension("20 кг");
-        NumberDimension expectedStr = new NumberDimension("30 кг");
+        NumberDimension c = new NumberDimension(1, "qw");
+        NumberDimension d = new NumberDimension(2, "qw");
 
-        NumberDimension result = a.plus(b);
-        NumberDimension resultStr = str1.plus(str2);
-        assertEquals(expected, result);
-        assertEquals(expectedStr, resultStr);
+        assertEquals(new NumberDimension(20.001, "кг"), a.toSI().plus(b.toSI()));
+        assertEquals(new NumberFormatException("Invalid dimension"), c.plus(d));
+        assertEquals(new NumberDimension("20.001 кг"), str1.toSI().plus(str2.toSI()));
+        assertEquals(new NumberFormatException("Different dimensions"), a.plus(b));
+        assertEquals(new NumberFormatException("Different dimensions"), str1.plus(str2));
     }
 
     @Test
@@ -39,15 +45,13 @@ public class NumberDimensionTest {
 
     @Test
     public void multiplyTest() {
-        NumberDimension expected = new NumberDimension(200, "кг");
+        NumberDimension expected = new NumberDimension(20, "кг");
         NumberDimension a = new NumberDimension(10, "кг");
-        NumberDimension b = new NumberDimension(20, "кг");
         NumberDimension str1 = new NumberDimension("10 кг");
-        NumberDimension str2 = new NumberDimension("20 кг");
-        NumberDimension expectedStr = new NumberDimension("200 кг");
+        NumberDimension expectedStr = new NumberDimension("20 кг");
 
-        NumberDimension result = a.multiply(b);
-        NumberDimension resultStr = str1.multiply(str2);
+        NumberDimension result = a.multiply(2);
+        NumberDimension resultStr = str1.multiply(2);
         assertEquals(expected, result);
         assertEquals(expectedStr, resultStr);
     }
@@ -67,18 +71,6 @@ public class NumberDimensionTest {
         assertEquals(expectedStr, resultStr);
     }
 
-    @Test
-    public void equalTest() {
-        NumberDimension a = new NumberDimension(10, "кг");
-        NumberDimension b = new NumberDimension(20, "кг");
-        NumberDimension str1 = new NumberDimension("20 кг");
-        NumberDimension str2 = new NumberDimension("20 кг");
-
-        boolean result = a.equal(b);
-        boolean resultStr = str1.equal(str2);
-        assertFalse(result);
-        assertTrue(resultStr);
-    }
 
     /*@Test
     public void toSITest() {
