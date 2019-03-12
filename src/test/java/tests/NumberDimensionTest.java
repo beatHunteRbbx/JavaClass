@@ -1,96 +1,71 @@
 package tests;
 
-import com.javaclass.Dimension;
 import com.javaclass.NumberDimension;
 import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Assertions;
+
 
 
 public class NumberDimensionTest {
     @Test
     public void plusTest() {
-        /*
-        подкорректировать регекс
-        если вместо размерности написан бред - кидать эксепшн
-        разные размерности - кидать эксепшн
-         */
-        NumberDimension a = new NumberDimension(1, "г");
-        NumberDimension b = new NumberDimension(20, "кг");
-        NumberDimension str1 = new NumberDimension("1 г");
-        NumberDimension str2 = new NumberDimension("20 кг");
+        NumberDimension a = new NumberDimension(1, "Г");
+        NumberDimension b = new NumberDimension(20, "Кг");
+        NumberDimension str1 = new NumberDimension("1 h");
+        NumberDimension str2 = new NumberDimension("20 min");
         NumberDimension c = new NumberDimension(1, "qw");
         NumberDimension d = new NumberDimension(2, "qw");
 
         assertEquals(new NumberDimension(20.001, "кг"), a.toSI().plus(b.toSI()));
-        assertEquals(new NumberFormatException("Invalid dimension"), c.plus(d));
-        assertEquals(new NumberDimension("20.001 кг"), str1.toSI().plus(str2.toSI()));
-        assertEquals(new NumberFormatException("Different dimensions"), a.plus(b));
-        assertEquals(new NumberFormatException("Different dimensions"), str1.plus(str2));
+        assertEquals(new NumberDimension("4800 s"), str1.toSI().plus(str2.toSI()));
+
+        Assertions.assertThrows(NumberFormatException.class, () -> c.toSI().plus(b.toSI()));
     }
 
     @Test
     public void minusTest() {
-        NumberDimension expected = new NumberDimension(10, "кг");
-        NumberDimension a = new NumberDimension(10, "кг");
-        NumberDimension b = new NumberDimension(20, "кг");
-        NumberDimension str1 = new NumberDimension("10 кг");
-        NumberDimension str2 = new NumberDimension("20 кг");
-        NumberDimension expectedStr = new NumberDimension("10 кг");
+        NumberDimension a = new NumberDimension(1, "Г");
+        NumberDimension b = new NumberDimension(20, "Кг");
+        NumberDimension str1 = new NumberDimension("20 mIn");
+        NumberDimension str2 = new NumberDimension("1 h");
 
-        NumberDimension result = b.minus(a);
-        NumberDimension resultStr = str2.minus(str1);
-        assertEquals(expected, result);
-        assertEquals(expectedStr, resultStr);
+        assertEquals(new NumberDimension(19.999, "кг"), b.toSI().minus(a.toSI()));
+        assertEquals(new NumberDimension("2400 s"), str2.toSI().minus(str1.toSI()));
     }
 
     @Test
     public void multiplyTest() {
-        NumberDimension expected = new NumberDimension(20, "кг");
-        NumberDimension a = new NumberDimension(10, "кг");
-        NumberDimension str1 = new NumberDimension("10 кг");
-        NumberDimension expectedStr = new NumberDimension("20 кг");
+        NumberDimension a = new NumberDimension(10, "г");
+        NumberDimension str1 = new NumberDimension("1 h");
 
-        NumberDimension result = a.multiply(2);
-        NumberDimension resultStr = str1.multiply(2);
-        assertEquals(expected, result);
-        assertEquals(expectedStr, resultStr);
+        assertEquals(new NumberDimension(0.02, "кг"), a.toSI().multiply(2));
+        assertEquals(new NumberDimension("7200 s"), str1.toSI().multiply(2));
     }
 
     @Test
     public void divideTest() {
-        NumberDimension expected = new NumberDimension(2, "кг");
-        NumberDimension a = new NumberDimension(10, "кг");
-        NumberDimension b = new NumberDimension(20, "кг");
-        NumberDimension str1 = new NumberDimension("10 кг");
-        NumberDimension str2 = new NumberDimension("20 кг");
-        NumberDimension expectedStr = new NumberDimension("2 кг");
 
-        NumberDimension result = b.divide(a);
-        NumberDimension resultStr = b.divide(a);
-        assertEquals(expected, result);
-        assertEquals(expectedStr, resultStr);
+        NumberDimension a = new NumberDimension(2, "г");
+        NumberDimension b = new NumberDimension(2, "кг");
+        NumberDimension str1 = new NumberDimension("2 г");
+        NumberDimension str2 = new NumberDimension("2 кг");
+
+        assertEquals(new NumberDimension(1000, "кг"), b.toSI().divide(a.toSI()));
+        assertEquals(new NumberDimension("1000 кг"), str2.toSI().divide(str1.toSI()));
     }
 
-
-    /*@Test
+    @Test
     public void toSITest() {
-        Dimension a = new Dimension(1000, "г");
-        Dimension b = new Dimension(1, "h");
-        Dimension aStr = new Dimension("1000 г");
-        Dimension bStr = new Dimension("1 h");
-        Dimension resultA = a.toSI();
-        Dimension resultB = b.toSI();
-        Dimension resultAStr = aStr.toSI();
-        Dimension resultBStr = bStr.toSI();
-        Dimension expectedA = new Dimension(1, "кг");
-        Dimension expectedB = new Dimension(3600,"s");
-        Dimension expectedAStr = new Dimension("1 кг");
-        Dimension expectedBStr = new Dimension("3600 s");
+        NumberDimension a = new NumberDimension(1000, "г");
+        NumberDimension b = new NumberDimension(1, "h");
+        NumberDimension aStr = new NumberDimension("1000 г");
+        NumberDimension bStr = new NumberDimension("1 h");
 
-        assertEquals(expectedA, resultA);
-        assertEquals(expectedB, resultB);
-        assertEquals(expectedAStr, resultAStr);
-        assertEquals(expectedBStr, resultBStr);
-    }*/
+        assertEquals(new NumberDimension(1, "кг"), a.toSI());
+        assertEquals(new NumberDimension(3600,"s"), b.toSI());
+        assertEquals(new NumberDimension("1 кг"), aStr.toSI());
+        assertEquals(new NumberDimension("3600 s"), bStr.toSI());
+    }
 
 }
