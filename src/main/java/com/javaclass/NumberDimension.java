@@ -84,7 +84,7 @@ public class NumberDimension {
 
         return new NumberDimension(userNumber, userDimension);
     }
-    public NumberDimension plus(NumberDimension other) {
+    public final NumberDimension plus(NumberDimension other) {
         if (this.dimension != other.dimension) throw new NumberFormatException("Different dimensions");
         double number1 = getNumber();
         double number2 = other.getNumber();
@@ -92,20 +92,20 @@ public class NumberDimension {
         return new NumberDimension(numberResult, dimension);
     }
 
-    public NumberDimension minus(NumberDimension other) {
+    public final NumberDimension minus(NumberDimension other) {
         double number1 = getNumber();
         double number2 = other.getNumber();
         double numberResult = number1 - number2;
         return new NumberDimension(numberResult, dimension);
     }
 
-    public NumberDimension multiply (double number) {
+    public final NumberDimension multiply (double number) {
         double userNumber = getNumber();
         double numberResult = userNumber * number;
         return new NumberDimension(numberResult, dimension);
     }
 
-    public NumberDimension divide(NumberDimension other) {
+    public final NumberDimension divide(NumberDimension other) {
         double number1 = getNumber();
         double number2 = other.getNumber();
         double numberResult = number1 / number2;
