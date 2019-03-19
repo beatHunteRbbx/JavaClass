@@ -7,13 +7,8 @@ public class NumberDimension {
     private final double number;
     private final String dimension;
 
-    private String foolCheck(String str) {
-        if (str.matches("\\s*(\\d+|\\d+\\.\\d+)\\s+(\\w|[а-яA-Я]){1,3}\\s*")) {
-            String userString = str.replaceAll("\\s+", " ").trim();
-            return userString;
-        }
-        else return "invalid";
-    }
+    private boolean foolCheck(String str) { return str.matches("\\s*(\\d+|\\d+\\.\\d+)\\s+(\\w|[а-яA-Я]){1,3}\\s*"); }
+
 
     private double getNumber() { return number; }
     private String getDimension() { return dimension; }
@@ -25,7 +20,8 @@ public class NumberDimension {
 
 
     public NumberDimension(String userStr) {
-        if (!foolCheck(userStr).equals("invalid")) {
+        if (foolCheck(userStr)) {
+            userStr = userStr.replaceAll("\\s+", " ").trim();
             number = Double.parseDouble(userStr.split(" ")[0]);
             dimension = userStr.split(" ")[1];
         }
@@ -85,7 +81,7 @@ public class NumberDimension {
         return new NumberDimension(userNumber, userDimension);
     }
     public final NumberDimension plus(NumberDimension other) {
-        if (this.dimension != other.dimension) throw new NumberFormatException("Different dimensions");
+        if (!this.dimension.equals(other.dimension)) throw new IllegalArgumentException("Different dimensions");
         double number1 = getNumber();
         double number2 = other.getNumber();
         double numberResult = number1 + number2;
@@ -93,6 +89,7 @@ public class NumberDimension {
     }
 
     public final NumberDimension minus(NumberDimension other) {
+        if (!this.dimension.equals(other.dimension)) throw new IllegalArgumentException("Different dimensions");
         double number1 = getNumber();
         double number2 = other.getNumber();
         double numberResult = number1 - number2;
@@ -105,10 +102,17 @@ public class NumberDimension {
         return new NumberDimension(numberResult, dimension);
     }
 
-    public final NumberDimension divide(NumberDimension other) {
+    public final double divide(NumberDimension other) {
+        if (!this.dimension.equals(other.dimension)) throw new IllegalArgumentException("Different dimensions");
         double number1 = getNumber();
         double number2 = other.getNumber();
         double numberResult = number1 / number2;
+        return numberResult;
+    }
+
+    public final NumberDimension divide(double number) {
+        double userNumber = getNumber();
+        double numberResult = userNumber / number;
         return new NumberDimension(numberResult, dimension);
     }
 
