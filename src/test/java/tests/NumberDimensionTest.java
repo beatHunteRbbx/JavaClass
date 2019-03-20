@@ -3,15 +3,13 @@ package tests;
 import com.javaclass.NumberDimension;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import org.junit.jupiter.api.Assertions;
+import static org.junit.Assert.assertTrue;
+
 
 
 
 public class NumberDimensionTest {
 
-    void assertEquals(NumberDimension expected, NumberDimension actual, double delta) {
-        // ...
-    }
 
     @Test
     public void plusTest() {
@@ -24,7 +22,6 @@ public class NumberDimensionTest {
 
         assertEquals(new NumberDimension(20.001, "кг"), a.toSI().plus(b.toSI()));
         assertEquals(new NumberDimension("4800 s"), str1.toSI().plus(str2.toSI()));
-
         Assertions.assertThrows(NumberFormatException.class, () -> c.toSI().plus(b.toSI()));
     }
 
@@ -38,7 +35,7 @@ public class NumberDimensionTest {
         NumberDimension d = new NumberDimension(2, "qw");
         NumberDimension c = new NumberDimension(1, "qw");
 
-        assertEquals(new NumberDimension(19.999, "кг"), b.toSI().minus(a.toSI()), 0.001);
+        assertEquals(new NumberDimension(19.999, "кг"), b.toSI().minus(a.toSI()));
         assertEquals(new NumberDimension("2400 s"), str2.toSI().minus(str1.toSI()));
 
         Assertions.assertThrows(NumberFormatException.class, () -> c.toSI().minus(b.toSI()));
