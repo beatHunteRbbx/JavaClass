@@ -10,7 +10,7 @@ public class NumberDimension {
     private boolean foolCheck(String str) { return str.matches("\\s*(\\d+|\\d+\\.\\d+)\\s+(\\w|[а-яA-Я]){1,3}\\s*"); }
 
 
-    private double getNumber() { return number; }
+    public double getNumber() { return number; }
     private String getDimension() { return dimension; }
 
     public NumberDimension(double userNumber, String userDimension) {
